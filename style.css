@@ -2,21 +2,103 @@
     margin:0; 
     padding:0; 
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif; 
 }
 
 body {
-    background-color: #000000;
+    background-color: rgba(20, 20, 20);
+    height: 10000rem;
 }
 
 
-h1 {
+/***** Mobile Header *****/
+#mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 3vw 6%;
+    justify-content: space-between;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.mobile-logo img{
+    object-position: center center;
+    object-fit:contain;
+    width: 80%;
+    padding-left: 4vw;
+}
+
+.search-mobile input[type=text]{
+    font-size: 2.5rem;
+    background: rgb(86, 86, 86, 0.5);
+    border: 2px solid whitesmoke;
+    padding: 0.7rem;
+    width: 18rem;
+}
+.search-mobile input[type=text]::placeholder {
     color: white;
-    z-index: 99;
 }
 
-.hidden{
-    display: none;
+/* side-menu */
+#side-menu {
+    width: 70vw;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    left: -70vw;
+    transition: transform 0.15s;
 }
 
+.m-user-info {
+    display: flex;
+    padding-left: 7%;
+}
 
+.m-user-info img {
+    object-fit: contain;
+    width: 13%;
+    margin-right: 3%;
+}
+
+#side-menu a {
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    white-space: nowrap;
+}
+
+.side-nav a{
+    display: block;
+    padding-left: 7%;
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.mobile-user {
+    padding-top: 2rem;
+    border-bottom: 1px solid rgb(86, 86, 86);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mobile-user h1 {
+    font-size: 3.1rem;
+    font-weight: 600;
+}
+
+.mobile-user h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 50%;
+}
+
+.side-menu--open {
+    transform: translatex(70vw);
+}
