@@ -9,6 +9,9 @@ body {
     height: 10000rem;
 }
 
+a {
+    text-decoration: none;
+}
 
 /***** Mobile Header *****/
 #mobile {
@@ -101,4 +104,120 @@ body {
 
 .side-menu--open {
     transform: translatex(70vw);
+}
+
+/***** Desktop Menu  *****/
+#desktop {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    padding-left: calc(min(4%, 2.5vw));
+    padding-right: 4%;
+    height: 2.6rem;
+}
+
+.menu-desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 2.6rem;
+}
+
+
+.leftside-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.desktop-logo img {
+    object-fit: contain;
+    width: 3.5rem;
+}
+
+.navigation  a{
+    color: white;
+    font-size: calc(min(1.4vw, 0.6rem));
+    vertical-align: top;
+    position: relative;
+    top: 0.1rem;
+    padding-left: 60%;
+    font-weight: 600;
+}
+
+.navigation a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 20%;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+  }
+
+
+.rightside-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.rightside-menu img{
+    object-fit: contain;
+    width: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.desktop-user {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.desktop-user img {
+    object-fit: contain;
+    width: auto;
+    height: calc(inherit * 0.9);
+    align-self: center;
+    border-radius: 5px;
+}
+
+.items-menu-header {
+    display: none;
+    
+}
+
+.items-menu-header a{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    font-size: calc(min(1.2vw, 0.95rem));
+    vertical-align: top;
+    position: relative;
+    top: -0.2rem;
+    padding-left: 5.5%;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 885px) {
+    .navigation {
+        display: none;
+    }
+    
+    .items-menu-header {
+        display: flex;
+    }
+
+    .desktop-logo img {
+        object-fit: contain;
+        width: calc(min(8vw ,6rem));
+    }
+
+
+
 }
