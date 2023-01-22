@@ -55,8 +55,9 @@ a {
     background-color: black;
     display: flex;
     flex-direction: column;
-    left: -70vw;
+    left: -100vw;
     transition: transform 0.15s;
+    overflow: scroll;
 }
 
 .m-user-info {
@@ -103,8 +104,10 @@ a {
 }
 
 .side-menu--open {
-    transform: translatex(70vw);
+    transform: translatex(100vw);
 }
+
+
 
 /***** Desktop Menu  *****/
 #desktop {
