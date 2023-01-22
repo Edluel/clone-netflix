@@ -3,7 +3,9 @@
 <head>
     <title> clone page | netflix </title>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" />          
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <section>
@@ -77,8 +79,16 @@
                         </div>
                         <div class="navigation">
                             <a class="navigation-bt" href="#">Navegar</a>
+                            <div class="navigation-dropdown" >
+                                <a href="#">Início</a>
+                                <a href="#">Séries</a>
+                                <a href="#">Filmes</a>
+                                <a href="#">Bombando</a>
+                                <a href="#">Minha lista</a>
+                                <a href="#">Navegar por idiomas</a>
+                            </div>
                         </div>
-                        <div class="items-menu-header">
+                        <div  class="items-menu-header">
                             <a href="#">Início</a>
                             <a href="#">Séries</a>
                             <a href="#">Filmes</a>
@@ -87,7 +97,7 @@
                             <a href="#">Navegar por idiomas</a>
                         </div>
                     </div>
-                    <!--min-width 885-->
+                    
                     <div class="rightside-menu">
                         <div class="search-bt">
                             <img src="images/search-svgrepo-com.svg">
@@ -100,6 +110,8 @@
                         </div>
                     </div>
 
+
+
                 </div>
 
             </div><!--Menu-desktop-->
@@ -108,6 +120,63 @@
         </div>
     </section><!--Header menu section-->
 
+    <section id="frist-swiper" class="thumbSection">
+        <h2 class="thumbTitle">Popular&nbspNow</h2>
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/advextraodinaria.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/alice.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/broklin99.webp">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/circulodefogo.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/gokushufudou.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/jojo.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/lovedr.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image" src="images/series/lupin.jpg">
+                    </a>
+                </div>
+
+            </div>
+            
+            <!-- navigation buttons -->
+            <div id="sbl" class="swiper-button-prev"></div>
+            <div id="sbr" class="swiper-button-next"></div>
+        
+            
+        </div><!--Slider-->
+    </section><!--Swiper section-->
 
 
 

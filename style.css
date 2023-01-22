@@ -7,6 +7,7 @@
 body {
     background-color: rgba(20, 20, 20);
     height: 10000rem;
+    overflow-x: hidden;
 }
 
 a {
@@ -58,6 +59,7 @@ a {
     left: -100vw;
     transition: transform 0.15s;
     overflow: scroll;
+    z-index: 99;
 }
 
 .m-user-info {
@@ -148,7 +150,7 @@ a {
     font-weight: 600;
 }
 
-.navigation a::after {
+.navigation-bt::after {
     content: "";
     width: 0;
     height: 0;
@@ -159,7 +161,8 @@ a {
     position: absolute;
     top: 30%;
     left: 100%;
-  }
+}
+
 
 
 .rightside-menu {
@@ -206,6 +209,129 @@ a {
     padding-left: 5.5%;
     font-weight: 600;
 }
+
+
+/*****Dropdown Menu*****/
+
+.navigation{
+    position: relative;
+}
+
+.navigation-dropdown {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2.5rem;
+    width: 20vw;
+    z-index: 99;
+}
+
+.navigation-dropdown::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-10%);
+    background-color: rgba(50, 50, 50, 0.5);
+    background-size: cover;
+    width: 150%;
+    height: 90%;
+}
+
+.navigation-dropdown a{
+    white-space: nowrap;
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.navigation:hover + .navigation-dropdown{
+    display: block;
+}
+
+
+
+/*****  Swiper  *****/
+
+#frist-swiper {
+    padding-top: 10rem;
+}
+
+.thumbSection {
+    padding-top: 3%;
+}
+
+.thumbTitle {
+    color:rgb(86, 86, 86); 
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 4%;
+    padding-bottom: 0.2rem;
+}
+
+.thumbTiles.swiper-container {
+    padding: 0 4%;
+}
+
+.thumbTile {
+    width: 20%;
+}
+
+.thumbTile__image {
+    width: 100%;
+}
+
+
+.thumbTiles .swiper-button-prev,
+.thumbTiles .swiper-button-next {
+    height: 100%;
+    width: 4%;
+    width: calc(4% - 5px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.thumbTiles .swiper-button-prev {
+    left: 0;
+
+}
+
+.thumbTiles .swiper-button-next {
+    right: 0;
+}
+
+.thumbTiles .swiper-button-prev::after,
+.thumbTiles .swiper-button-next::after {
+    color: #fff;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+}
+
+
+@media screen and (min-width: 640px) {
+    
+    .thumbTiles .swiper-button-prev::after,
+    .thumbTiles .swiper-button-next::after {
+        display: none;
+        font-size: 2.4vw;
+    }
+
+    .thumbTiles .swiper-button-prev:hover::after,
+    .thumbTiles .swiper-button-next:hover::after {
+        transform: scale(1.25);
+    }
+
+    .thumbTiles:hover .swiper-button-prev::after,
+    .thumbTiles:hover .swiper-button-next::after {
+        display: block;
+    }
+
+}
+
 
 @media screen and (min-width: 885px) {
     .navigation {
