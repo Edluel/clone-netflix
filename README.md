@@ -8,13 +8,13 @@
 - [License](#license)
 
 This is a practice project for front-end development, designed to mimic the
-layout and functionality of netflix catalog page. The code is written in HTML, CSS, 
+layout and functionality of the netflix catalog page. The code is written in HTML, CSS, 
 and JavaScript.
 
 
 ## <a id="features">Features</a>
 
-- Dynamic header menu that adjusts to user's hardware: 
+- Dynamic header menu that adjusts to the user's hardware: 
   - Mobile users will see a header with a side menu button.
   - Desktop users will see a header without a side menu button, but with a navigation button that has a dropdown function.
   - When the desktop screen is wide, the navigation button is replaced with the items displayed directly in the header
@@ -43,9 +43,9 @@ Here are some screenshots of the page clone in action:<br>
 
 ## <a id="contributing">Contributing</a>
 
-Feel free to submit pull requests or issues if you have suggestions for improvements. This is a practice project and ani feedback is welcome.
+Feel free to submit pull requests or issues if you have suggestions for improvements. This is a practice project and any feedback is welcome.
 
 
 ## <a id="license">License</a>
 
-This projecti is lencensed under MIT License.
+This project is licensed under MIT License.
